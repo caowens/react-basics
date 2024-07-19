@@ -3,14 +3,16 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+function Greeting(props) {
+  return <h2>Hello, {props.name}!</h2>
+}
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <div>
-      <h1>Count: {count}</h1>
-      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <h1>Hello World!</h1>
+      <Greeting name="Alice" />
     </div>
   )
 }
